@@ -15,6 +15,8 @@
         dataType: 'json',
         contentType: 'application/json',
         error: globalHandleError,
+        succsess: function(){
+        },
         data: JSON.stringify(makePostData($(this))),
       });
     }
