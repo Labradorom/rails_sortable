@@ -1,4 +1,6 @@
 class SortableController < ApplicationController
+  skip_authorization_check
+
   #
   # post /sortable/reorder, rails_sortable: [{ klass: "Item", id: "3" }, { klass: "Item", id: "2" }, { klass: "Item", id: "1" }]
   #
