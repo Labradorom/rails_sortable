@@ -14,6 +14,7 @@
         url: '/sortable/reorder',
         dataType: 'json',
         contentType: 'application/json',
+        error: globalHandleError,
         data: JSON.stringify(makePostData($(this))),
       });
     }
