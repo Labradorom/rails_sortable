@@ -14,16 +14,13 @@
         url: '/sortable/reorder',
         dataType: 'json',
         contentType: 'application/json',
-<<<<<<< HEAD
         error: globalHandleError,
-        succsess: function(){
+        success: function(){
+          return false;
         },
-        data: JSON.stringify(makePostData($(this))),
-=======
         data: JSON.stringify({
           rails_sortable: $(this).sortable('toArray'),
         }),
->>>>>>> origin/use_message_verifier
       });
     }
 
