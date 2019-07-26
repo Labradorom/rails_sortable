@@ -1,10 +1,7 @@
 class SortableController < ApplicationController
-<<<<<<< HEAD
   skip_authorization_check
-=======
 
   VERIFIER = Rails.application.message_verifier(:rails_sortable_generate_sortable_id)
->>>>>>> origin/use_message_verifier
 
   #
   # post /sortable/reorder, rails_sortable: [
